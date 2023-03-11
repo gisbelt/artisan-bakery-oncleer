@@ -1,7 +1,27 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
 [[redirects]]
   from = "/cakes"
-  to = "/cakes"
+  to = "/"
   status = 200
-  force = true # COMMENT: ensure that we always redirect
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+  force = true
+
+[[redirects]]
+  from = "/aboutus"
+  to = "/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
