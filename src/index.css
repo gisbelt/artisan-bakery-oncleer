@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,900&family=Raleway:wght@600&display=swap');
+
+/* 767px sm tailwind  */
+
+:root {
+  /* Colors Palette  */
+  --color1: #2d2606;
+  --color2: #594c0d;
+  --color3: #867313;
+  --color4: #b3991a;
+  --color5: #dfbf20;
+  --color6: #e5cc4d;
+  --color7: #ecd979;
+  --color8: #f2e5a6;
+  --color9: #f9f2d2;
+  --color10: #fcf9e9
+  --black: #393939;
+  --white: #fff;
+  /* nav  */
+  --nav-width: 48px;
+  /* Typography */
+  --font-family-main: 'Poppins','Raleway', 'Open Sans', helvetica, Arial, Sans-serif;
+  --tipo-secundaria: Verdana;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --black: #ececec;
+  }
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #3978a2;
+}
+::-webkit-scrollbar-thumb{
+    background: #d3d3d3;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #acacac;
+}
+
+/* Optional */
+/* We deactivate animations in case the user has configured the mode without animation. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+/* Reset margins and paddings of all labels. */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Avoid problems with images */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* optional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* optional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reset links to work as boxes... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ...except those found in paragraphs */
+p a {
+  display: inline;
+}
+
+/* Eemove the points from the <li> */
+li {
+  list-style-type: none;
+}
+
+/* Setting soft anchors */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+/* Deactivate default styles of the main text labels */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  /* font-size: 1em; */
+  /* font-weight: inherit; */
+  font-style: inherit;
+  text-decoration: none;
+  /* color: inherit; */
+}
+/* Avoiding problems with pseudo-elements in quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Configure the text we select */
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+::selection {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* Level typography and form placement problems. */
+form, input, textarea, select, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* optional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+button, a {
+  cursor: pointer;
+}
+
+/* Reset tables */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Avoid SVG problems */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Testing it, do not use in production) In the case of adding a  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
+/* Configure the typography for the entire website. */
+body {
+  min-height: 100vh;
+  font-size: var(--normal-font-size);
+  font-family: var(--font-family-main);
+  color: var(--black);
+  /* optional */
+  line-height: 1.4em;
+  /* optional */
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  /* optional */
+  font-smooth: always;
+  /* optional */
+  -webkit-font-smoothing: antialiased;
+  /* optional */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* background: radial-gradient(#3978a2,#1f1013) !important;  */
+  /* background-color: #1a5379; */
+  /* opacity: 0.8; */
+  -webkit-animation: fadeIn 1 1s ease-out;
+  -moz-animation: fadeIn 1 1s ease-out;
+  -o-animation: fadeIn 1 1s ease-out;
+  animation: fadeIn 1 1s ease-out;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

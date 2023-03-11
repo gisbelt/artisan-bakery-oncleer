@@ -1,0 +1,223 @@
+.cakes_parallax {
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    /* color: var(--color9); */
+    /* color: var(--color1); */
+    --opacidad-negro: 0.4;
+    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg"); */
+    background-image: url("/assets/img/background_banner.svg");
+    /* background-color: var(--color9); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 102vh;
+    min-height: 100%;
+    position: relative;
+}
+.cakes_parallax_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 0 1.8rem;
+    /* width: 300px; */
+    /* height: 400px;   */
+    /* left:50%;
+    top:50%; */
+    /* transform:translate(-50%,-50%); */
+}
+.cakes_parallax_body h1 {
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #2d2606, #594c0d, #867313, #b3991a);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.swiper {
+    width: 100%;
+    border-radius: 20px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+}
+.swiper-cards .swiper-slide {
+    border-radius: 20px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 550px;
+}
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.swiper-pagination-bullet-active {
+    background: var(--color5);
+}
+  
+/* ************************************** */
+
+.cakes_tabs {
+    display: flex;
+    flex-direction: column;
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-macarons.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1.8rem;
+}
+.cakes_tabs_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cakes_tabs_buttons button {
+    padding: 1rem 1.5rem;
+    transition: all .1s ease-out 0s;
+}
+.cakes_tabs_buttons button.active {
+    background-color: var(--color5);
+    color: var(--color1);
+    box-shadow: 4px 5px 17px -4px var(--color1);
+}
+
+.tabs_content {
+    place-content: center flex-start;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 32px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    /* margin-top: 30px; */
+}
+.tabs_content_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+.tabs_content_body .swiper-button-prev::after, .tabs_content_body .swiper-button-next::after {
+    color: var(--color5);
+}
+.tabs_children {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-radius: 0.75rem;
+    box-shadow: 7px 14px 25px -2px rgba(30,30,60,0.25);
+    background-color: var(--color9);
+    width: 300px;
+    height: auto
+}
+.tabs_children_img {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tabs_children_img img {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    height: 180px;
+}
+.tabs_children_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 18px;
+}
+.tabs_children_text h3 {
+    line-height: 1.75rem;
+}
+.tabs_children_text p {
+    width: 100%;
+    letter-spacing: 2px;
+}
+.tabs_children_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px;
+}
+.tabs_children_btn hr {
+    width: 100%;
+    overflow: hidden;
+}
+.tabs_children_btn button {
+    width: 50%;
+    padding: .75rem 1.25rem;
+}
+
+/* ************************************** */
+
+@media screen and (min-width: 865px) and (max-width: 1186px) {
+    .cakes_parallax {
+        gap: 20px;
+        padding: 0 1.8rem;
+        height: 105vh;
+    }
+    .cakes_parallax_body h1 {
+        width: 100%;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width: 633px) and (max-width: 864px) {
+    .cakes_parallax {
+        gap: 20px;
+        padding: 0 1.8rem;
+        height: 105vh;
+    }
+    .cakes_parallax_body h1 {
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+}
+@media (max-width: 632px) {
+    .cakes_parallax {
+        gap: 30px;
+        height: 105vh;
+    }
+    .cakes_parallax_body h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-align: center;
+    }
+
+}
