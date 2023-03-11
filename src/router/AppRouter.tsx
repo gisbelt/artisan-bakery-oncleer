@@ -1,28 +1,42 @@
+import { ReactNode } from "react"
 import { 
     createBrowserRouter, 
     RouterProvider,
-    Navigate
+    Navigate,
+    createHashRouter,
+    RouteObject
 } from "react-router-dom"
 import { AboutUsChildren, AboutUsPage } from "../AboutUs/pages/AboutUsPage"
 import { CakesChildren, CakesPage } from "../Cakes/pages/CakesPage"
 import { ContactChildren, ContactPage } from "../Contact/pages/ContactPage"
 import { HomePage, HomeChildren } from "../Home/pages/HomePage"
 
+interface Route {
+    path: string;
+    element: ReactNode;
+    children?: RouteObject[];
+}
 
-const router = createBrowserRouter([
+const routes: Route[]  = [
     {
-        path: "/home",
+        path: "/",
         element: <HomePage />,
-        children: HomeChildren
-    },
-    {
-        path: "/*",
-        element: <Navigate to={"/home"} />,
+        children: HomeChildren.map((child) => ({
+            path: child.path,
+            element: child.element,
+            caseSensitive: false,
+            children: undefined
+        }))
     },
     {
         path: "/cakes",
         element: <CakesPage />,
-        children: CakesChildren
+        children: CakesChildren.map((child) => ({
+            path: child.path,
+            element: child.element,
+            caseSensitive: false,
+            children: undefined
+        }))
     },
     {
         path: "/aboutus",
@@ -34,12 +48,17 @@ const router = createBrowserRouter([
         element: <ContactPage />,
         children: ContactChildren
     },
+    {
+        path: "*",
+        element: <Navigate to={"/"} />,
+    },
+]
 
-])
-
+const router = createBrowserRouter(routes);
+  
 
 export const AppRouter = () => {
-  return (
-    <RouterProvider router={ router }/>
-  )
+    return (
+        <RouterProvider router={ router }/>
+    )
 }

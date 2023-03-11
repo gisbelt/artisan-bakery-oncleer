@@ -5,20 +5,32 @@ import { BannerPage } from './BannerPage'
 import { FeaturesPage } from './FeaturesPage'
 import { GridLayoutPage } from './GridLayoutPage'
 import '../Home.css'
+import { ReactElement, ReactFragment, ReactNode } from 'react'
 
+interface Routes {
+    path: string;
+    index: boolean;
+    element: ReactNode;
+    children?: ReactNode; 
+}
 
-export const HomeChildren = [
+export const HomeChildren: Routes[] = [
     {
-        path: "/home/features", 
+        path: "/features", 
         index: true, 
         element: <FeaturesPage />,
     },
     {
-        path: "/home/grid-cakes", 
+        path: "/grid-cakes", 
         index: true, 
         element: <GridLayoutPage />,
     },
 ]
+
+// export const HomeChildren = [
+//     <FeaturesPage key="features" />,
+//     <GridLayoutPage key="grid-cakes" />
+// ];
 
 export const HomePage = () => {
     return (
