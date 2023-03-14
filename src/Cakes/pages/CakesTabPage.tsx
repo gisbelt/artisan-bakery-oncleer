@@ -3,11 +3,10 @@ import { TabsButtons } from "../components/TabsButtons"
 import { TabsChildren } from "../components/TabsChildren"
 import { TabsContent } from "../components/TabsContent"
 import { bocados, tortas } from "../data/tabsChildrenList"
-import { CakesProvider } from "./context/CakesProvider"
 
 export const CakesTabPage = () => {
     return (
-        <CakesProvider>
+        <>
             <section className="cakes_tabs">
                 <div className="cakes_tabs_buttons">
                     <TabsButtons id='tab1' title="Bocados" />
@@ -30,6 +29,6 @@ export const CakesTabPage = () => {
                     </Tabs>
                 </div>
             </section>
-        </CakesProvider>
+        </>
     )
 }

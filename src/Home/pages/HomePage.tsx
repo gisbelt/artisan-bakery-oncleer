@@ -5,7 +5,9 @@ import { BannerPage } from './BannerPage'
 import { FeaturesPage } from './FeaturesPage'
 import { GridLayoutPage } from './GridLayoutPage'
 import '../Home.css'
-import { ReactElement, ReactFragment, ReactNode } from 'react'
+import { ReactNode } from 'react'
+import { ContactPage } from './ContactPage'
+import { CounterPage } from './CounterPage'
 
 interface Routes {
     path: string;
@@ -25,6 +27,16 @@ export const HomeChildren: Routes[] = [
         index: true, 
         element: <GridLayoutPage />,
     },
+    {
+        path: "/counter", 
+        index: true, 
+        element: <CounterPage />,
+    },
+    {
+        path: "/contact", 
+        index: true, 
+        element: <ContactPage />,
+    },
 ]
 
 // export const HomeChildren = [
@@ -39,6 +51,8 @@ export const HomePage = () => {
             <BannerPage />
             <FeaturesPage />
             <GridLayoutPage />
+            <CounterPage />
+            <ContactPage />
             {/* <Outlet /> */}
         </>
     )

@@ -195,9 +195,52 @@ body {
   -o-animation: fadeIn 1 1s ease-out;
   animation: fadeIn 1 1s ease-out;
 }
-
 .center{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Globals  */
+h1 {
+  font-size: 4.5rem;
+  line-height: 62px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 62px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 1.3rem;
+  line-height: 62px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+p {
+  width: 59%;
+  letter-spacing: 4px;
+}
+hr{
+  width: 50%;
+  height: 2px;  
+  background-color: var(--color1);  
+}
+.button {
+  padding: 1.5rem 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  background-color: var(--color3);
+  color: var(--color9);
+  box-shadow: 4px 5px 17px -4px var(--color1);
+  transition: all .4s ease-out 0s;
+}
+.button:hover {
+  background-color: var(--color5);
+  color: var(--color1);
+  box-shadow: 4px 5px 17px -4px var(--color1);
 }

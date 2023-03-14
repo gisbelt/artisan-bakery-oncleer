@@ -3,12 +3,10 @@ import {
     createBrowserRouter, 
     RouterProvider,
     Navigate,
-    createHashRouter,
     RouteObject
 } from "react-router-dom"
 import { AboutUsChildren, AboutUsPage } from "../AboutUs/pages/AboutUsPage"
 import { CakesChildren, CakesPage } from "../Cakes/pages/CakesPage"
-import { ContactChildren, ContactPage } from "../Contact/pages/ContactPage"
 import { HomePage, HomeChildren } from "../Home/pages/HomePage"
 
 interface Route {
@@ -42,11 +40,6 @@ const routes: Route[]  = [
         path: "/aboutus",
         element: <AboutUsPage />,
         children: AboutUsChildren
-    },
-    {
-        path: "/contact",
-        element: <ContactPage />,
-        children: ContactChildren
     },
     {
         path: "*",

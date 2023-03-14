@@ -2,6 +2,7 @@ import { Navbar } from '../../ui/components/Navbar'
 import { menuItems } from '../../ui/data/menuItems'
 import { CakesTabPage } from './CakesTabPage'
 import { CakesBannerPage } from './CakesBannerPage'
+import { CakesProvider } from './context/CakesProvider'
 import '../Cakes.css'
 
 export const CakesChildren = [
@@ -18,10 +19,10 @@ export const CakesChildren = [
 
 export const CakesPage = () => {
     return (
-        <>
+        <CakesProvider>
             <Navbar items={ menuItems } />
             <CakesBannerPage />
             <CakesTabPage />
-        </>
+        </CakesProvider>
     )
 }

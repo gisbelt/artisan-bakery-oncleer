@@ -19,10 +19,10 @@ export const bocados = [
     { id: 'tab2', img: tortaOreo, alt: '', title: 'titulo 2', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
     { id: 'tab3', img: tortaChocolate, alt: '', title: 'titulo 3', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
     { id: 'tab4', img: cakes, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: premio, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: macarons2, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: cheesecakess, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: cheesecakess, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab5', img: premio, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab6', img: macarons2, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab7', img: cheesecakess, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab8', img: cheesecakess, alt: '', title: 'titulo 4', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
 ]
 
 export const tortas = [
@@ -30,8 +30,8 @@ export const tortas = [
     { id: 'tab2', img: tortaMajar, title: 'titulo tortas2 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
     { id: 'tab3', img: bocado3, title: 'titulo tortas3 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
     { id: 'tab4', img: bocado4, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: cajaBocados, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: cajaMacarons, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: tortaPeque, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
-    { id: 'tab4', img: macarons3, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab5', img: cajaBocados, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab6', img: cajaMacarons, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab7', img: tortaPeque, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
+    { id: 'tab8', img: macarons3, title: 'titulo tortas4 ', alt: '', description: 'adjsalk asdlisad hasildhl hsads sjald asdnl nsa,dnkas ,sahd, ,asbdk bsad' },
 ]
