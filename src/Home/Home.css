@@ -201,7 +201,8 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    min-height: 100vh;
+    height: 100%;
+    min-height: 100%;
     /* background-image: url("/assets/img/shape-08.svg"); */
     background-image: url("/assets/img/background_grid.svg");
     background-color: var(--color9);
@@ -210,10 +211,11 @@
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    padding: 1.8rem 0 1.8rem;
 }
 .grid_layout_text  {
     max-width: 720px;
-    padding: 40px 30px 50px;
+    padding: 50px 30px 50px;
 }
 .grid_layout_text .text {
     line-height: 46px;
@@ -239,7 +241,7 @@
     height: 80vh;
     aspect-ratio: 1;
     grid-template-columns: repeat(var(--m),auto);
-    margin: 25px 0 50px;
+    margin: 25px 0 70px;
 }
   
 .gallery > img {
@@ -274,8 +276,34 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 274px;
-    padding-bottom: 95px;
+    padding-bottom: 50px;
     padding-top: 50px;
+}
+.counter_body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 1.8rem;
+}
+.counter_body div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.counter_body div span {
+    color: var(--color5);
+    font-size: 50px;
+    font-weight: 700;
+}
+.counter_body div p {
+    color: var(--color9);
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 100%;
 }
 
 /* ****************************************** */
@@ -288,21 +316,23 @@
     gap: 50px;
     color: var(--color9);
     background-image: url("/assets/img/background_contact.svg");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100%;
     min-height: 100%;
     padding-bottom: 95px;
-    padding-top: 50px;
+    padding-top: 1.8rem;
 }
 .contact_body {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.8rem;
+    padding: 50px 0 1.8rem;
 }
 .contact_body_text {
     display: flex;
@@ -312,39 +342,63 @@
 }
 .contact_body_text h2 {
     color: var(--color1);
+    text-align: center;
 }
 .contact_form {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 1.8rem;
 }
 .contact_form form {
     display: grid; 
-    align-content: center;
-    justify-content: center;
+    justify-content: center; 
+    align-content: center; 
     grid-template-columns: 1.1fr 1.1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 30px 30px; 
     grid-template-areas: 
-        "input1 input2 ."
-        "input3 input3 ."
-        "input4 input4 ."; 
+        "input1 input2"
+        "input3 input3"
+        "input4 input4"
+        "form_button form_button"; 
 }
 .input1 { grid-area: input1; }
 .input2 { grid-area: input2; }
 .input3 { grid-area: input3; }
 .input4 { grid-area: input4; }
-
+.form_button { 
+    display: grid; 
+    justify-items: center;
+    grid-area: form_button; 
+}
+.contact_form .form_input input {
+    height: 60px;
+    padding: 0 25px;
+}
+.contact_form .form_textarea textarea {
+    height: 180px;
+    resize: none;
+    padding: 25px 25px;
+}
 .contact_form .form_input input, 
 .contact_form .form_textarea textarea {
-    padding: 0 25px;
-    border: 1px solid #7A7A7A;
+    border: 1px solid var(--color1);
     border-radius: 5px;
-    height: 60px;
     width: 100%;
     font-size: 16px;
+    color:  var(--color1);
+    outline: 0px;
+    background-color: var(--color9);
+}
+.contact_form .form_input input::placeholder, 
+.contact_form .form_textarea textarea::placeholder {
     color: #7A7A7A;
+}
+.contact_form .form_input input:focus, 
+.contact_form .form_textarea textarea:focus {
+    border-color: #E37E7D;
 }
 
 /* ****************************************** */
@@ -432,6 +486,9 @@
     .features_box_right p {
         text-align: justify;
     }
+    .features_box_right_btn {
+        width: 60%;
+    }
     .gallery {
         width: 750px;
     }
@@ -477,7 +534,9 @@
     .features_box_right p {
         text-align: unset;
     }
-
+    .features_box_right_btn {
+        width: 100%;
+    }
 
     /* *********************  */
     .grid_layout {
@@ -495,6 +554,14 @@
     .gallery {
         width: 650px;
         height: 100%;
+    }
+
+    /* ************************ */
+    .counter_body div span {
+        font-size: 40px;
+    }
+    .counter_body div p {
+        font-size: 1.3rem;
     }
 }
 
@@ -531,6 +598,7 @@
     .features_box {
         padding: 1.8rem;
         flex-direction: column;
+        gap: 70px;
         width: 100%;
         max-width: 100%;
     }
@@ -568,6 +636,27 @@
     .gallery {
         width: 550px;
         height: 100%;
+    }
+
+    /* ********************** */
+    .counter {
+        height: 500px;
+    }
+    .counter_body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1.8rem;
+        gap: 50px;
+    }
+
+    /* ********************** */
+    .contact_body_text h2 {
+        font-size: 2rem;
+        line-height: 40px;
+        letter-spacing: 2px;
     }
 }
 
@@ -629,6 +718,11 @@
     .features_box_right p {
         text-align: center;
     }
+    .features_box_right_btn {
+        padding: 1rem 1rem !important;
+        font-size: .8rem !important;
+        width: 60%;
+    }
     .features_text .text {
         font-size: 16px;
         font-weight: 400;
@@ -664,6 +758,50 @@
         height: 100%;
     }
 
+    /* ********************** */
+    .counter {
+        height: 500px;
+    }
+    .counter_body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1.8rem;
+        gap: 50px;
+    }
+    .counter_body div {
+        gap: 20px;
+    }
+    .counter_body div span {
+        font-size: 40px;
+    }
+    .counter_body div p {
+        font-size: 1.3rem;
+    }
+
+    /* ********************** */
+    .contact {
+        gap: 30px;
+    }
+    .contact_body_text h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    .contact_form form {
+        display: grid;
+        grid-template-columns: 1.1fr 1.1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px 30px;
+        grid-template-areas:
+            "input1 input1"
+            "input2 input2"
+            "input3 input3"
+            "input4 input4"
+            "form_button form_button";
+    }
 
     /* *********************  */
     .shape09 {

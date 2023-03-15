@@ -68,7 +68,7 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                         <SwiperSlide key={ item.id } virtualIndex={ index }>
                             <div className="tabs_children">
                                 <div className="tabs_children_img">
-                                    <a className="overlay"><i className="bi bi-eye overlay-i" onClick={() => handleOpen(item.img)} ></i></a>
+                                    <div className="overlay"><i className="bi bi-eye overlay-i" onClick={() => handleOpen(item.img)} ></i></div>
                                     <img src={ item.img } alt={ item.alt } />
                                 </div>
                                 <div className="tabs_children_text">

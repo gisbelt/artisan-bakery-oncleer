@@ -80,7 +80,7 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    padding: 1.8rem;
+    padding: 1.8rem 0;
 }
 .cakes_tabs_buttons {
     display: flex;
@@ -124,8 +124,14 @@
     width: 100%;
     height: min-content;
     overflow: hidden;
-    padding: 0px;
+    padding: 0px .3rem;
     position: relative;
+}
+.tabs_content_body .swiper-button-prev {
+    left: 0;
+}
+.tabs_content_body .swiper-button-next {
+    right: 0;
 }
 .tabs_content_body .swiper-button-prev::after, 
 .tabs_content_body .swiper-button-next::after {
@@ -261,7 +267,13 @@
 @media (max-width: 632px) {
     .cakes_parallax {
         gap: 30px;
-        height: 105vh;
+        height: auto;
+    }
+    .cakes_parallax_body {
+        height: 520px;
+    }
+    .cakes_parallax_body .swiper .swiper-slide  {
+        height: 300px;
     }
     .cakes_parallax_body h1 {
         width: 100%;

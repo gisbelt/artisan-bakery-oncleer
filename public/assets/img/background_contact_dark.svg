@@ -1,13 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
-    <g mask="url(&quot;#SvgjsMask1020&quot;)" fill="none">
-        <rect width="1440" height="560" x="0" y="0" fill="rgba(89, 76, 13, 1)"></rect>
-        <path d="M1512 560L0 560 L0 341.89Q59.01 280.9, 120 339.91Q163.09 263, 240 306.09Q281.77 275.86, 312 317.63Q376.51 310.14, 384 374.66Q396.59 315.25, 456 327.85Q482.11 281.96, 528 308.07Q587.26 295.34, 600 354.6Q626.43 309.03, 672 335.46Q712.21 255.66, 792 295.87Q837.83 269.7, 864 315.53Q942.73 274.26, 984 352.99Q994.66 291.65, 1056 302.32Q1083.72 258.04, 1128 285.76Q1180.5 266.26, 1200 318.76Q1282.57 281.32, 1320 363.89Q1342.28 266.17, 1440 288.45Q1484.03 260.48, 1512 304.51z" fill="rgba(249, 242, 210, 1)"></path>
-        <path d="M1464 560L0 560 L0 447.05Q19.95 395, 72 414.96Q106.7 329.66, 192 364.36Q240.08 340.44, 264 388.53Q338.35 342.88, 384 417.23Q395.21 356.44, 456 367.65Q486.54 326.19, 528 356.73Q584.55 341.28, 600 397.83Q648.89 326.72, 720 375.61Q746.22 329.83, 792 356.04Q871.87 315.91, 912 395.78Q995.79 359.57, 1032 443.36Q1078 369.37, 1152 415.37Q1179.69 323.06, 1272 350.76Q1313.47 320.24, 1344 361.71Q1418.59 316.3, 1464 390.89z" fill="rgba(179, 153, 26, 1)"></path>
-        <path d="M1464 560L0 560 L0 466.76Q84.79 431.55, 120 516.34Q160.23 436.57, 240 476.79Q282.41 399.2, 360 441.6Q385.8 395.4, 432 421.2Q527.07 396.26, 552 491.33Q561.2 428.53, 624 437.73Q652.57 394.31, 696 422.88Q750.33 405.21, 768 459.54Q831.49 451.03, 840 514.52Q854.8 457.32, 912 472.12Q953.13 393.25, 1032 434.38Q1119 401.38, 1152 488.39Q1225.11 441.5, 1272 514.6Q1312.43 435.03, 1392 475.46Q1435.66 447.12, 1464 490.78z" fill="rgba(134, 115, 19, 1)"></path>
-        <path d="M1464 560L0 560 L0 533.02Q52.78 513.8, 72 566.57Q79.37 501.94, 144 509.3Q195.83 441.13, 264 492.96Q368.22 477.18, 384 581.41Q431.19 508.6, 504 555.79Q570.14 501.93, 624 568.07Q637.5 509.58, 696 523.08Q772.63 479.71, 816 556.34Q843.38 463.72, 936 491.09Q978.82 461.91, 1008 504.73Q1085.61 462.34, 1128 539.94Q1158.83 498.77, 1200 529.59Q1248.85 506.44, 1272 555.3Q1306.8 470.1, 1392 504.89Q1420.89 461.78, 1464 490.68z" fill="rgba(89, 76, 13, 1)"></path>
+    <g mask="url(&quot;#SvgjsMask1003&quot;)" fill="none">
+        <rect width="1440" height="560" x="0" y="0" fill="rgba(249, 242, 210, 1)"></rect>
+        <g transform="translate(0, 0)" stroke-linecap="round">
+            <path d="M260 239.24 L260 320.76" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M280 161.74 L280 398.26" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M300 248.84 L300 311.15" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M320 243.89 L320 316.11" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M340 186.74 L340 373.26" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M360 164.24 L360 395.76" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M380 111.53 L380 448.47" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M400 125.46 L400 434.54" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M420 116.44 L420 443.56" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M440 208.66 L440 351.34" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M460 161.91 L460 398.09" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M480 209.39 L480 350.61" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M500 153.19 L500 406.81" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M520 235.6 L520 324.4" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M540 114.78 L540 445.22" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M560 230.93 L560 329.07" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M580 182.44 L580 377.56" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M600 155 L600 405" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M620 125.65 L620 434.35" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M640 188.8 L640 371.2" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M660 147.82 L660 412.18" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M680 230.55 L680 329.45" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M700 151.78 L700 408.23" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M720 199.51 L720 360.49" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M740 142.01 L740 417.99" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M760 213.57 L760 346.43" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M780 128.6 L780 431.39" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M800 213.15 L800 346.85" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M820 241.9 L820 318.1" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M840 238.6 L840 321.39" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M860 242.5 L860 317.5" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M880 162.14 L880 397.86" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M900 259.19 L900 300.81" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M920 180.42 L920 379.58" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M940 232.56 L940 327.44" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M960 105.54 L960 454.46" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M980 107.39 L980 452.61" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1000 160.34 L1000 399.66" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M1020 249.74 L1020 310.26" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1040 228.94 L1040 331.06" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1060 228.13 L1060 331.88" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1080 122.65 L1080 437.36" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1100 227.6 L1100 332.39" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M1120 254.24 L1120 305.76" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M1140 128.19 L1140 431.81" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+            <path d="M1160 232.07 L1160 327.93" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
+            <path d="M1180 114.14 L1180 445.86" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
+        </g>
     </g>
     <defs>
-        <mask id="SvgjsMask1020">
+        <mask id="SvgjsMask1003">
             <rect width="1440" height="560" fill="#ffffff"></rect>
         </mask>
     </defs>

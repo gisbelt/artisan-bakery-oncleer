@@ -244,3 +244,6 @@ hr{
   color: var(--color1);
   box-shadow: 4px 5px 17px -4px var(--color1);
 }
+.MuiBox-root {
+  outline: none;
+}
