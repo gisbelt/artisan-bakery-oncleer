@@ -1,58 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="560" preserveAspectRatio="none" viewBox="0 0 1440 560">
-    <g mask="url(&quot;#SvgjsMask1003&quot;)" fill="none">
-        <rect width="1440" height="560" x="0" y="0" fill="rgba(249, 242, 210, 1)"></rect>
-        <g transform="translate(0, 0)" stroke-linecap="round">
-            <path d="M260 239.24 L260 320.76" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M280 161.74 L280 398.26" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M300 248.84 L300 311.15" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M320 243.89 L320 316.11" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M340 186.74 L340 373.26" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M360 164.24 L360 395.76" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M380 111.53 L380 448.47" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M400 125.46 L400 434.54" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M420 116.44 L420 443.56" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M440 208.66 L440 351.34" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M460 161.91 L460 398.09" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M480 209.39 L480 350.61" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M500 153.19 L500 406.81" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M520 235.6 L520 324.4" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M540 114.78 L540 445.22" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M560 230.93 L560 329.07" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M580 182.44 L580 377.56" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M600 155 L600 405" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M620 125.65 L620 434.35" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M640 188.8 L640 371.2" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M660 147.82 L660 412.18" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M680 230.55 L680 329.45" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M700 151.78 L700 408.23" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M720 199.51 L720 360.49" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M740 142.01 L740 417.99" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M760 213.57 L760 346.43" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M780 128.6 L780 431.39" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M800 213.15 L800 346.85" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M820 241.9 L820 318.1" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M840 238.6 L840 321.39" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M860 242.5 L860 317.5" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M880 162.14 L880 397.86" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M900 259.19 L900 300.81" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M920 180.42 L920 379.58" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M940 232.56 L940 327.44" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M960 105.54 L960 454.46" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M980 107.39 L980 452.61" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1000 160.34 L1000 399.66" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M1020 249.74 L1020 310.26" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1040 228.94 L1040 331.06" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1060 228.13 L1060 331.88" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1080 122.65 L1080 437.36" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1100 227.6 L1100 332.39" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M1120 254.24 L1120 305.76" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M1140 128.19 L1140 431.81" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-            <path d="M1160 232.07 L1160 327.93" stroke-width="15" stroke="rgba(3, 94, 123, 1)"></path>
-            <path d="M1180 114.14 L1180 445.86" stroke-width="15" stroke="rgba(227, 126, 125, 1)"></path>
-        </g>
+    <g mask="url(&quot;#SvgjsMask1043&quot;)" fill="none">
+        <rect width="1440" height="560" x="0" y="0" fill="rgba(45, 38, 6, 1)"></rect>
+        <path d="M0 0L687.94 0L0 120.92z" fill="rgba(255, 255, 255, .1)"></path>
+        <path d="M0 120.92L687.94 0L984.6800000000001 0L0 237.13z" fill="rgba(255, 255, 255, .075)"></path>
+        <path d="M0 237.13L984.6800000000001 0L1234.1000000000001 0L0 387.03z" fill="rgba(255, 255, 255, .05)"></path>
+        <path d="M0 387.03L1234.1000000000001 0L1366.3000000000002 0L0 470.37z" fill="rgba(255, 255, 255, .025)"></path>
+        <path d="M1440 560L1018.37 560L1440 285.89z" fill="rgba(0, 0, 0, .1)"></path>
+        <path d="M1440 285.89L1018.37 560L679.03 560L1440 147.55999999999997z" fill="rgba(0, 0, 0, .075)"></path>
+        <path d="M1440 147.55999999999995L679.03 560L455.41999999999996 560L1440 136.35999999999996z" fill="rgba(0, 0, 0, .05)"></path>
+        <path d="M1440 136.35999999999996L455.41999999999996 560L235.35999999999996 560L1440 67.21999999999996z" fill="rgba(0, 0, 0, .025)"></path>
     </g>
     <defs>
-        <mask id="SvgjsMask1003">
+        <mask id="SvgjsMask1043">
             <rect width="1440" height="560" fill="#ffffff"></rect>
         </mask>
     </defs>
