@@ -148,6 +148,7 @@
 }
 .features_box_right_btn {
     width: 45%;
+    text-align: center;
 }
 .features_text .text {    
     font-size: 24px;
@@ -356,7 +357,7 @@
     justify-content: center; 
     align-content: center; 
     grid-template-columns: 1.1fr 1.1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr; 
     gap: 30px 30px; 
     grid-template-areas: 
         "input1 input2"
@@ -381,6 +382,9 @@
     height: 180px;
     resize: none;
     padding: 25px 25px;
+}
+.contact_form .form_input {
+    height: auto;
 }
 .contact_form .form_input input, 
 .contact_form .form_textarea textarea {
@@ -793,7 +797,7 @@
     .contact_form form {
         display: grid;
         grid-template-columns: 1.1fr 1.1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         gap: 30px 30px;
         grid-template-areas:
             "input1 input1"

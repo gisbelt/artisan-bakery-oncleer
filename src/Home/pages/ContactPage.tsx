@@ -1,19 +1,10 @@
-import { ImageList } from '../../ui/components/ImageList'
 import { Line } from '../../ui/components/Line'
-import { shapesImageList } from '../../ui/data/imageList'
 import { ContactForm } from '../components/ContactForm'
 
 export const ContactPage = () => {
 
-    
-
     return (
         <section className='contact'>
-            {/* <div>
-                <ImageList images={ shapesImageList }/>
-            </div>
-             */}
-
             <div className="contact_body">
                 <div className="contact_body_text">
                     <h2>Ponte en Contacto</h2>
@@ -21,7 +12,13 @@ export const ContactPage = () => {
                 </div>                
             </div>
 
-            <ContactForm />
+            <ContactForm 
+                fields={[
+                    { class: 'form_input input1', type: 'text', placeholder: 'Nombre', name: 'name' },
+                    { class: 'form_input input2', type: 'email', placeholder: 'Correo', name: 'email' },
+                    { class: 'form_input input3', type: 'text', placeholder: 'Asunto', name: 'subject' },
+                ]}
+            />
         </section>
     )
 }

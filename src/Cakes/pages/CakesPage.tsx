@@ -13,10 +13,6 @@ export const CakesChildren = [
     },
 ]
 
-// export const CakesChildren = [
-//     <CakesTabPage key="cakes-tab" />,
-// ];
-
 export const CakesPage = () => {
     return (
         <CakesProvider>

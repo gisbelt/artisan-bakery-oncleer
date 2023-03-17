@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ImageList } from "../../ui/components/ImageList";
 import { Line } from "../../ui/components/Line";
 import { shapesImageList } from "../../ui/data/imageList";
@@ -24,9 +25,12 @@ export const FeaturesPage = () => {
               litora torquent per conubia nostra, per inceptos himenaeos. 
               Maecenas ultricies, orci molestie blandit interdum.
             </p>
-            <button className='button features_box_right_btn'>
-                Síguenos en Instagram
-            </button>
+            <Link 
+              to={'/cakes'}
+              className='button features_box_right_btn'
+            >
+                Mira nuestros Postres
+            </Link>
           </div>
         </div>
       </section>

@@ -27,7 +27,7 @@ export const Navbar: FunctionComponent<Props> = ({ items }) => {
         setShowMenu( !showMenu )
         setIcon( !icon )
     }  
-
+    //hover nav
     const [showNav, setShowNav] = useState<boolean>( false )
     const hoverNav = () => {
        setShowNav(!showNav)
