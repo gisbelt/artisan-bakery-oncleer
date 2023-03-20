@@ -4,6 +4,7 @@ import { CakesTabPage } from './CakesTabPage'
 import { CakesBannerPage } from './CakesBannerPage'
 import { CakesProvider } from './context/CakesProvider'
 import '../Cakes.css'
+import { Footer } from '../../ui/components/Footer'
 
 export const CakesChildren = [
     {
@@ -19,6 +20,7 @@ export const CakesPage = () => {
             <Navbar items={ menuItems } />
             <CakesBannerPage />
             <CakesTabPage />
+            <Footer />
         </CakesProvider>
     )
 }

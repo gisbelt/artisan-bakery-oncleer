@@ -1,11 +1,12 @@
 import { BannerLogo } from '../../Home/components/BannerLogo'
 import { CakesParallaxCarousel } from '../components/CakesParallaxCarousel'
+import logo from '/assets/img/logo.png';
 
 export const CakesBannerPage = () => {
     return (
         <section className='cakes_parallax'>
 
-            <BannerLogo />
+            <BannerLogo logo={ logo } />
             <CakesParallaxCarousel />
             
         </section>

@@ -2,12 +2,13 @@ import { ImageList } from '../../ui/components/ImageList'
 import { Line } from '../../ui/components/Line'
 import { shapesImageList } from '../../ui/data/imageList'
 import { BannerLogo } from '../components/BannerLogo'
+import logo from '/assets/img/logo.png';
 
 export const BannerPage = () => {
  
     return (
         <section className='banner'>
-            <BannerLogo />
+            <BannerLogo logo={ logo } />
 
             <div className='banner_body'>
                 <div>

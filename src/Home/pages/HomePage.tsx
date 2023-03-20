@@ -8,6 +8,7 @@ import '../Home.css'
 import { ReactNode } from 'react'
 import { ContactPage } from './ContactPage'
 import { CounterPage } from './CounterPage'
+import { Footer } from '../../ui/components/Footer'
 
 interface Routes {
     path: string;
@@ -53,6 +54,7 @@ export const HomePage = () => {
             <GridLayoutPage />
             <CounterPage />
             <ContactPage />
+            <Footer />
             {/* <Outlet /> */}
         </>
     )

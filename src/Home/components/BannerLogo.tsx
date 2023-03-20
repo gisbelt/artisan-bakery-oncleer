@@ -1,9 +1,14 @@
-import logo from '/assets/img/logo.png';
+import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
-export const BannerLogo = () => {
+interface Props {
+    logo: string;
+}
+
+export const BannerLogo: FC<Props> = ({ logo }) => {
     return (
-        <div className='banner_logo'>
-            <img src={logo} alt="" className='logo'/>
-        </div>
+        <Link to="/" className='banner_logo'>
+            <img src={ logo } alt="" className='logo'/>
+        </Link>
     )
 }

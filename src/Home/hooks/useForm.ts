@@ -22,10 +22,7 @@ export const useForm = (initialForm: FormFields = {}): UseForm => {
 
     const onInputChange = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
         const { name, value } = event.target;
-        setFormState({
-            ...formState,
-            [name]: value,
-        });
+        setFormState({ ...formState, [name]: value });
         formErrors[name] && setFormErrors((prevErrors) => ({ ...prevErrors, [name]: '' })); // Clears error message
     };
 
@@ -34,9 +31,7 @@ export const useForm = (initialForm: FormFields = {}): UseForm => {
         (value.trim() === '') && setFormErrors((prevErrors) => ({ ...prevErrors, [name]: `Please enter ${name}` })); // Add error message
     };
 
-    const onResetForm = (): void => {
-        setFormState(initialForm);
-    };
+    const onResetForm = (): void => setFormState(initialForm);      
 
     return {
         formState,
