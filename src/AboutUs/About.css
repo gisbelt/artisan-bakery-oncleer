@@ -1,0 +1,53 @@
+.about_us {
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    /* color: var(--color9); */
+    /* color: var(--color1); */
+    --opacidad-negro: 0.4;
+    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg"); */
+    background-image: url("/assets/img/background_banner.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100%;
+    position: relative;
+}
+.about_us_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.8rem;
+}
+.about_us_body h1 {
+    font-size: 3.5rem;
+    animation: fluido 5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #2d2606, #594c0d, #867313, #b3991a);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about_us_body .about_us_body_cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    /* background-color: var(--color9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 31px 11px rgba(30, 30, 60, 0.26); */
+}
+.about_us_body_cols div img {
+    width: 100%;
+    height: 100%;
+}

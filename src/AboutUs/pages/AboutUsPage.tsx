@@ -1,3 +1,7 @@
+import { AboutBannerPage } from './AboutBannerPage'
+import { Navbar } from '../../ui/components/Navbar'
+import { menuItems } from '../../ui/data/menuItems'
+import '../About.css'
 
 export const AboutUsChildren = [
     {
@@ -9,6 +13,9 @@ export const AboutUsChildren = [
 
 export const AboutUsPage = () => {
   return (
-    <div>AboutUsPage</div>
+    <>
+      <Navbar items={ menuItems } />
+      <AboutBannerPage />
+    </>
   )
 }

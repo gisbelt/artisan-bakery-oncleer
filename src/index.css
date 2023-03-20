@@ -247,3 +247,16 @@ hr{
 .MuiBox-root {
   outline: none;
 }
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  /* background-color: var(--color9); */
+}
+.loading img {
+  width: 150px;
+  height: 150px;
+}

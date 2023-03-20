@@ -3,8 +3,8 @@ import { menuItems } from '../../ui/data/menuItems'
 import { CakesTabPage } from './CakesTabPage'
 import { CakesBannerPage } from './CakesBannerPage'
 import { CakesProvider } from './context/CakesProvider'
-import '../Cakes.css'
 import { Footer } from '../../ui/components/Footer'
+import '../Cakes.css'
 
 export const CakesChildren = [
     {
