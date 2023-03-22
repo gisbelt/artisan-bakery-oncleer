@@ -4,11 +4,11 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
-    /* color: var(--color9); */
+    color: var(--color9);
     /* color: var(--color1); */
     --opacidad-negro: 0.4;
-    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg"); */
-    background-image: url("/assets/img/background_banner.svg");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-bocados.jfif");
+    /* background-image: url("/assets/img/background_banner.svg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -27,27 +27,271 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 1.8rem;
+    position: relative;
 }
 .about_us_body h1 {
     font-size: 3.5rem;
     animation: fluido 5s ease-in-out infinite;
-    background: linear-gradient(-45deg, #2d2606, #594c0d, #867313, #b3991a);
+    background: linear-gradient(-45deg, #f9f2d2, #f9f2d2, #e5cc4d, #b3991a);
     background-size: 300%;
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.about_us_body .about_us_body_cols {
+.about_us_body .line, 
+.about_us_body .line .box {
+    background-color: var(--color9);
+}
+.about_us_body .line .box::before, 
+.about_us_body .line .box::after {
+    background-color: rgb(249, 242, 210, .33);
+}
+.about_us_body_cols {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 600px;
-    /* background-color: var(--color9);
+    /* position: relative;
+    background-color: var(--color9);
     border-radius: 20px;
     box-shadow: 0px 0px 31px 11px rgba(30, 30, 60, 0.26); */
+}
+.about_us_body_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 1.8rem 2.8rem;
+}
+.about_us_body_right {
+    display: flex;
+    width: 100%;
+}
+.about_us_body_left h2 {
+    font-size: 1.2rem;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: var(--color9);
+    background-color: var(--color3);
+    padding: 1rem 1rem;
+}
+.about_us_body_left p {
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 .about_us_body_cols div img {
     width: 100%;
     height: 100%;
+    animation: spin 4s infinite linear;
+}
+.about_us_body_left, .about_us_body_right{
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+/* *********************************** */
+
+.team {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--color1);
+    --opacidad-negro: 0.5;
+    background-image: url("/assets/img/background_grid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+    padding: 1.8rem;
+}
+.team_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0 1.8rem;
+}
+.team_body_text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+.team_body_text .line {
+    width: 70%;
+    height: 2px;
+}
+.team_body_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    background-color: var(--color9);
+    border-radius: 20px;
+}
+.team_body_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 330px;
+    height: 444px;
+    background-color: var(--color9);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 31px 11px rgba(30, 30, 60, 0.26);
+    transition: all 0.3s ease-out 0s;
+}
+.team_body_cards .card .card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.team_body_cards .card .card_info h3 {
+    line-height: 20px;
+}
+.team_body_cards .card .card_info p {
+    width: 100%;
+}
+.team_body_cards .card .card_info .card_info_socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card_info_socials li a {
+    font-size: 1.6rem;
+    transition: all .2s ease-out 0s;
+}
+.card_info_socials li a:hover {
+    color: var(--color3);
+    transform: translateY(-5px);
+}
+
+/* *********************************** */
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* ************************************ */
+
+@media screen and (max-width: 1280px) {
+    .about_us {
+        height: auto;
+        padding-bottom: 2.16rem;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 1153px) {
+    .about_us {
+        gap: 20px;
+        height: 100%;
+    }
+    .about_us_body {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .about_us_body h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-align: center;
+    }
+    .about_us_body_cols {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    .about_us_body_left {
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+        padding: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    .about_us_body_right {
+        display: none;
+    }
+    .about_us_body_left h2,
+    .about_us_body_left p {
+        font-size: 20px;
+    }
+    .about_us_body_left p {
+        line-height: 30px;
+    }
+    .about_us_body_left a {
+        padding: 1rem 1.5rem;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 770px){
+    .about_us_body_right {
+        display: none;
+    }
+    .team {
+        height: 100%;
+    }
+    .team_body {
+        gap: 50px;
+        padding: 1.8rem 0 1.8rem;
+    }
+    .team_body h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+    .team_body_cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about_us {
+        gap: 20px;
+        height: 100%;
+    }
+    .about_us_body {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .about_us_body h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 40px;
+        text-align: center;
+    }
+    .about_us_body_cols {
+        flex-direction: column;
+        position: relative;
+    }
+    .about_us_body_left {
+        gap: 15px;
+        padding: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    .about_us_body_left h2,
+    .about_us_body_left p {
+        font-size: 14px;
+    }
+    .about_us_body_left a {
+        padding: 1rem 1.5rem;
+    }
 }

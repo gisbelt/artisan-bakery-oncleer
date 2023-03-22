@@ -1,7 +1,9 @@
 import { AboutBannerPage } from './AboutBannerPage'
 import { Navbar } from '../../ui/components/Navbar'
 import { menuItems } from '../../ui/data/menuItems'
+import { TeamPage } from './TeamPage'
 import '../About.css'
+import { Footer } from '../../ui/components/Footer'
 
 export const AboutUsChildren = [
     {
@@ -16,6 +18,8 @@ export const AboutUsPage = () => {
     <>
       <Navbar items={ menuItems } />
       <AboutBannerPage />
+      <TeamPage />
+      <Footer />
     </>
   )
 }

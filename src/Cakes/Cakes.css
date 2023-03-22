@@ -239,15 +239,21 @@
 
 /* ************************************** */
 
+@media screen and (max-width: 1280px) {
+    .cakes_parallax {
+        height: auto;
+        padding: 0 0 3.8rem;
+    }
+}
 @media screen and (min-width: 865px) and (max-width: 1186px) {
     .cakes_parallax {
         gap: 20px;
         padding: 0 1.8rem;
-        height: 105vh;
+        height: 100vh;
     }
     .cakes_parallax_body h1 {
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -256,12 +262,18 @@
     .cakes_parallax {
         gap: 20px;
         padding: 0 1.8rem;
-        height: 105vh;
+        height: 100vh;
     }
     .cakes_parallax_body h1 {
         width: 100%;
         font-size: 3rem;
         text-align: center;
+    }
+    .swiper-slide {
+        height: 100%;
+    }
+    .cakes_tabs {
+        gap: 50px;
     }
 
 }
@@ -269,6 +281,7 @@
     .cakes_parallax {
         gap: 30px;
         height: auto;
+        padding: 0;
     }
     .cakes_parallax_body {
         height: 520px;
@@ -282,5 +295,10 @@
         line-height: 40px;
         text-align: center;
     }
-
+    .cakes_tabs_buttons {
+        padding-top: 1.8rem;
+    }
+    .tabs_children_text p  {
+        color: var(--color1);
+    }
 }

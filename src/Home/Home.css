@@ -54,16 +54,10 @@
 .banner_box_btn {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
 }
-/* .banner_btn {
-
-} */
-/* .banner_btn:hover {
-    transform: scale(1.1);
-} */
 .banner_btn_social {
     display: inline-flex;
     gap: 20px;
@@ -76,6 +70,17 @@
 .banner_btn_social a:hover{
     color: var(--color3);
     transform: translateY(-5px);
+}
+.banner_arrow {
+    position: relative;
+    line-height: 40px;
+    height: auto;
+}
+.banner_arrow img{
+    width: 150px;
+    height: 150px;
+    -webkit-animation: mover .4s infinite  alternate;
+    animation: mover .4s infinite  alternate;
 }
 
 /* ****************************************** */
@@ -474,8 +479,22 @@
     100%{background-position:31.9% 2%}
 }
 
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 /* ****************************************** */
 
+@media screen and (max-width: 1280px) {
+    .banner {
+        height: 100%;
+    }
+}
 /* 864px  */
 @media screen and (min-width: 1187px) and (max-width: 1406px) {
     .features {
@@ -687,6 +706,7 @@
     .banner_body p {
         width: 100%;
         text-align: center;
+        color: var(--color1);
     }
     .banner_box_btn {
         gap: 50px;

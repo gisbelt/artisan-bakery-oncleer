@@ -37,6 +37,10 @@ export const BannerPage = () => {
                         <i className="bi bi-facebook"></i>
                     </a>                    
                 </div>
+
+                <div className="banner_arrow" >
+                    <img src="/assets/img/arrow-down.png" alt=""  />
+                </div>
             </div>
         </section>
     )
