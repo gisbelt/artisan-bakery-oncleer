@@ -16,7 +16,9 @@ export const CakesParallaxCarousel = () => {
 
     return (
         <div className="cakes_parallax_body">
-            <h1>Nuestros Postres</h1>
+            <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+                Nuestros Postres
+            </h1>
             <Line />
             <Swiper
                 effect={"cards"}

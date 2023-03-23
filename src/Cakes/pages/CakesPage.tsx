@@ -5,6 +5,7 @@ import { CakesBannerPage } from './CakesBannerPage'
 import { CakesProvider } from './context/CakesProvider'
 import { Footer } from '../../ui/components/Footer'
 import '../Cakes.css'
+import { ScrollTop } from '../../ui/components/ScrollTop'
 
 export const CakesChildren = [
     {
@@ -21,6 +22,7 @@ export const CakesPage = () => {
             <CakesBannerPage />
             <CakesTabPage />
             <Footer />
+            <ScrollTop />
         </CakesProvider>
     )
 }

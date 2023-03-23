@@ -9,6 +9,7 @@ import { ReactNode } from 'react'
 import { ContactPage } from './ContactPage'
 import { CounterPage } from './CounterPage'
 import { Footer } from '../../ui/components/Footer'
+import { ScrollTop } from '../../ui/components/ScrollTop'
 
 interface Routes {
     path: string;
@@ -55,6 +56,7 @@ export const HomePage = () => {
             <CounterPage />
             <ContactPage />
             <Footer />
+            <ScrollTop />
             {/* <Outlet /> */}
         </>
     )

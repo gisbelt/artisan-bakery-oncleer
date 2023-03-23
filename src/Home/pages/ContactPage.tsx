@@ -7,7 +7,9 @@ export const ContactPage = () => {
         <section className='contact'>
             <div className="contact_body">
                 <div className="contact_body_text">
-                    <h2>Ponte en Contacto</h2>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="800">
+                        Ponte en Contacto
+                    </h2>
                     <Line />
                 </div>                
             </div>

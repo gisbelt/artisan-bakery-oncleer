@@ -8,7 +8,7 @@ interface Props {
 export const BannerLogo: FC<Props> = ({ logo }) => {
     return (
         <Link to="/" className='banner_logo'>
-            <img src={ logo } alt="" className='logo'/>
+            <img src={ logo } alt="" className='logo' data-aos="zoom-in" data-aos-delay="400"/>
         </Link>
     )
 }

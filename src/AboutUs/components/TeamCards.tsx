@@ -23,7 +23,7 @@ export const TeamCards: FC<Props> = ({ items }) => {
         <>
             {
                 items.map((item, index) => (
-                    <div className="card" key={ index }>
+                    <div className="card" key={ index } data-aos="flip-left" data-aos-easing="ease-in-out" data-aos-delay="400">
                         <div className="card_image">
                             <img src={ item.img } alt={ item.alt } />
                         </div>

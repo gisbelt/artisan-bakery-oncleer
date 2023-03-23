@@ -7,7 +7,7 @@
     color: var(--color9);
     /* color: var(--color1); */
     --opacidad-negro: 0.4;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-bocados.jfif");
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
     /* background-image: url("/assets/img/background_banner.svg"); */
     background-repeat: no-repeat;
     background-position: center;
@@ -84,7 +84,7 @@
 .about_us_body_left p {
     width: 100%;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.2rem;
 }
 .about_us_body_cols div img {
@@ -152,8 +152,17 @@
     border-radius: 20px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0px 0px 31px 11px rgba(30, 30, 60, 0.26);
+    /* box-shadow: 0px 0px 31px 11px rgba(30, 30, 60, 0.26); */
+    box-shadow: 0 15px 30px -7px var(--color1);
     transition: all 0.3s ease-out 0s;
+}
+.team_body_cards .card:hover {
+    box-shadow: 0 15px 30px -7px var(--color3);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+}
+.team_body_cards .card .card_image img {
+    border-radius: 50px;
 }
 .team_body_cards .card .card_info {
     display: flex;
@@ -193,7 +202,7 @@
 @media screen and (max-width: 1280px) {
     .about_us {
         height: auto;
-        padding-bottom: 2.16rem;
+        padding-bottom: 4.16rem;
     }
 }
 @media screen and (min-width: 770px) and (max-width: 1153px) {

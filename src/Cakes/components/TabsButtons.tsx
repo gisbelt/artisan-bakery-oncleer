@@ -17,7 +17,7 @@ export const TabsButtons: FC<Props>  = ({ id, title }) => {
     const { handleClick, activeTab } = context;
 
     return (
-        <button onClick={ () => handleClick(id) } className={`button ${activeTab === id ? "active" : ""}`}>
+        <button onClick={ () => handleClick(id) } className={`button ${activeTab === id ? "active" : ""}`} data-aos="zoom-in-up" data-aos-easing="ease-in-out" data-aos-delay="400">
             { title }
         </button>
     )

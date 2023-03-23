@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import { AppRouter } from "./router/AppRouter"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+AOS.refresh();
 
 const LoadingIndicator = () => (
   <div className="loading">

@@ -7,7 +7,9 @@ export const TeamPage = () => {
         <section className="team">
             <div className="team_body">
                 <div className="team_body_text">
-                    <h2>Nuestro equipo</h2>
+                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="800" >
+                        Nuestro equipo
+                    </h2>
                     <Line />
                 </div>
 

@@ -1,19 +1,20 @@
-import React from 'react'
+import { AnimatedNumber } from '../components/AnimatedNumber'
 
 export const CounterPage = () => {
+
     return (
         <section className='counter'>
             <div className="counter_body">
                 <div>
-                    <span className="count">36546</span>
+                    <AnimatedNumber number={ 36546 } />
                     <p>Tortas Entregadas</p>
                 </div>
                 <div>
-                    <span className="count">28</span>
+                    <AnimatedNumber number={ 28 } />
                     <p>Tipos de Postres</p>
                 </div>
                 <div>
-                    <span className="count">12</span>
+                    <AnimatedNumber number={ 12 } />
                     <p>Miembros del equipo</p>
                 </div>
             </div>

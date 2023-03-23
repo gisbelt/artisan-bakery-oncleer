@@ -4,6 +4,7 @@ import { menuItems } from '../../ui/data/menuItems'
 import { TeamPage } from './TeamPage'
 import '../About.css'
 import { Footer } from '../../ui/components/Footer'
+import { ScrollTop } from '../../ui/components/ScrollTop'
 
 export const AboutUsChildren = [
     {
@@ -20,6 +21,7 @@ export const AboutUsPage = () => {
       <AboutBannerPage />
       <TeamPage />
       <Footer />
+      <ScrollTop />
     </>
   )
 }

@@ -7,18 +7,22 @@ import blob2 from '/assets/img/blob2.svg';
 import shape09 from '/assets/img/shape-09.svg';
 import people from '/assets/img/people.png';
 import { Link } from "react-router-dom";
+import { Parallax } from "react-parallax";
 
 
 export const AboutBannerPage = () => {
     return (
+        <Parallax strength={300} blur={{ min: -10, max: 10 }} bgImage="/assets/img/caja-bocados.jfif" bgImageAlt="about us image" >
         <section className="about_us">
             <BannerLogo logo={ logo } />
 
             <div className="about_us_body">
-                <h1>Sobre Nosotros</h1>
+                <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+                    Sobre Nosotros
+                </h1>
                 <Line />
                 <div className="about_us_body_cols">
-                    <div className="about_us_body_left">
+                    <div className="about_us_body_left" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="400">
                         <div><h2>Conócenos</h2></div>
                         <p>
                             Nuestra especialidad en Oncleer son los deliciosos cheesecakes, los bocados, las y tortas personalizadas. 
@@ -38,5 +42,6 @@ export const AboutBannerPage = () => {
                 </div>
             </div>
         </section>
+        </Parallax>
     )
 }

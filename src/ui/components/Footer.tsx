@@ -11,7 +11,7 @@ export const Footer = () => {
                     <BannerLogo logo={ logoInvert } />
                 </div>
 
-                <div className="footer_nav">
+                <div className="footer_nav" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-delay="400">
                     <ul>
                         <li> <Link to="/">Inicio</Link> </li>
                         <li> <Link to="/aboutus">Quiénes Somos</Link> </li>

@@ -50,6 +50,8 @@
 }
 .banner_body p {
     text-align: center;
+    color: var(--color1); 
+    font-weight: 700;
 }
 .banner_box_btn {
     display: flex;
@@ -97,7 +99,8 @@
     justify-content: center;
     color: var(--color9);
     --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -150,6 +153,7 @@
 } */
 .features_box_right p {
     width: auto;
+    font-weight: 700;
 }
 .features_box_right_btn {
     width: 45%;
@@ -299,7 +303,7 @@
     align-items: center;
     gap: 30px;
 }
-.counter_body div span {
+.counter_body div .count {
     color: var(--color5);
     font-size: 50px;
     font-weight: 700;
