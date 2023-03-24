@@ -10,7 +10,7 @@ export const ContactPage = () => {
         <section className='contact' ref={ inViewRef }>
             <div className="contact_body">
                 <div className="contact_body_text">
-                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="800">
+                    <h2 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="500">
                         Ponte en Contacto
                     </h2>
                     <Line />

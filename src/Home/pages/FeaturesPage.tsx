@@ -9,16 +9,16 @@ const reviewStarts: string[] = ['bi-star-fill', 'bi-star-fill', 'bi-star-fill', 
 
 export const FeaturesPage = () => {
     return (
-      <Parallax strength={300} blur={{ min: -10, max: 10 }} bgImage="/assets/img/macarons1.jpg" bgImageAlt="features image" >
+      <Parallax strength={600} blur={{ min: -3, max: 5 }} bgImage="/assets/img/caja-varios2.jfif" bgImageAlt="features image" >
         <section className="features">
           <ImageList images={ shapesImageList }/>
 
           <div className="features_box">
-            <div className="features_box_left" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="500">
+            <div className="features_box_left" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="400">
               <FeaturesLeft />
             </div>
 
-            <div className="features_box_right" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="500">
+            <div className="features_box_right" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="400">
               <h2>Hacemos felices <br />a nuestros clientes</h2>
               <Line />
               <p>

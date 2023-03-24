@@ -24,7 +24,7 @@ export const ContactForm = (props: Props) => {
     const { name, email, subject, message } = formState;
 
     return (
-        <div className="contact_form" data-aos="flip-left" data-aos-easing="ease" data-aos-delay="1000">
+        <div className="contact_form" data-aos="flip-left" data-aos-easing="ease" data-aos-delay="800">
             <form action="" autoComplete='off'>
                 { props.fields.map((field, index) => (
                      <div className={ field.class } key={ index }>

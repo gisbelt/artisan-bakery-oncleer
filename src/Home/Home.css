@@ -98,7 +98,7 @@
     align-items: center;
     justify-content: center;
     color: var(--color9);
-    --opacidad-negro: 0.5;
+    --opacidad-negro: 0.2;
     /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/macarons1.jpg"); */
     background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
     background-repeat: no-repeat;
