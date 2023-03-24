@@ -2,9 +2,10 @@ import { AboutBannerPage } from './AboutBannerPage'
 import { Navbar } from '../../ui/components/Navbar'
 import { menuItems } from '../../ui/data/menuItems'
 import { TeamPage } from './TeamPage'
-import '../About.css'
 import { Footer } from '../../ui/components/Footer'
 import { ScrollTop } from '../../ui/components/ScrollTop'
+import { useEffect } from 'react'
+import '../About.css'
 
 export const AboutUsChildren = [
     {
@@ -15,6 +16,11 @@ export const AboutUsChildren = [
 ]
 
 export const AboutUsPage = () => {
+
+  useEffect(() => {
+      document.title = 'Sobre Oncleer - Oncleer';
+  }, []);
+
   return (
     <>
       <Navbar items={ menuItems } />

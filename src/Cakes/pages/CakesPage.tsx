@@ -4,8 +4,9 @@ import { CakesTabPage } from './CakesTabPage'
 import { CakesBannerPage } from './CakesBannerPage'
 import { CakesProvider } from './context/CakesProvider'
 import { Footer } from '../../ui/components/Footer'
-import '../Cakes.css'
 import { ScrollTop } from '../../ui/components/ScrollTop'
+import { useEffect } from 'react'
+import '../Cakes.css'
 
 export const CakesChildren = [
     {
@@ -16,6 +17,11 @@ export const CakesChildren = [
 ]
 
 export const CakesPage = () => {
+
+    useEffect(() => {
+        document.title = 'Postres - Oncleer';
+    }, []);
+
     return (
         <CakesProvider>
             <Navbar items={ menuItems } />
