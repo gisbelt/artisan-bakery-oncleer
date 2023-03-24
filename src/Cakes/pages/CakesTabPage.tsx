@@ -1,3 +1,4 @@
+import { useScrollTo } from "../../ui/hooks/useScrollTo"
 import { Tabs } from "../components/Tabs"
 import { TabsButtons } from "../components/TabsButtons"
 import { TabsChildren } from "../components/TabsChildren"
@@ -5,9 +6,12 @@ import { TabsContent } from "../components/TabsContent"
 import { bocados, tortas } from "../data/tabsChildrenList"
 
 export const CakesTabPage = () => {
+
+    const { inViewRef } = useScrollTo('/cakes/cakes-tab')
+
     return (
         <>
-            <section className="cakes_tabs">
+            <section className="cakes_tabs" ref={ inViewRef }>
                 <div className="cakes_tabs_buttons">
                     <TabsButtons id='tab1' title="Bocados" />
                     <TabsButtons id='tab2' title="Tortas" />

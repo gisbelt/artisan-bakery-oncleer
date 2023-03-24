@@ -28,7 +28,7 @@ export const FeaturesPage = () => {
                 Maecenas ultricies, orci molestie blandit interdum.
               </p>
               <Link 
-                to={'/cakes'}
+                to={"/cakes/cakes-tab"}
                 className='button features_box_right_btn'
               >
                   Mira nuestros Postres

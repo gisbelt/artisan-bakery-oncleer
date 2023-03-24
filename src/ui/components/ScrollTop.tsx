@@ -38,3 +38,9 @@ export const ScrollTop = () => {
         </button>
     )
 }
+
+// Por hacer:
+// Poner data en tarjetas de tabs children 
+// Hacer scroll cuando se especifica una url (chatgpt) 
+// Hacer gif y agregar al portafolio 
+// Pner repositorio publico 

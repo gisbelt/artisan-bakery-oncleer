@@ -1,14 +1,17 @@
 import { ImageList } from '../../ui/components/ImageList'
 import { Line } from '../../ui/components/Line'
 import { shapesImageList } from '../../ui/data/imageList'
+import { useScrollTo } from '../../ui/hooks/useScrollTo';
 import { BannerArrow } from '../components/BannerArrow';
 import { BannerLogo } from '../components/BannerLogo'
 import logo from '/assets/img/logo.png';
 
 export const BannerPage = () => {
- 
+    
+    const { inViewRef } = useScrollTo('/') 
+
     return (
-        <section className='banner'>
+        <section className='banner' ref={ inViewRef } >
             <BannerLogo logo={ logo } />
 
             <div className='banner_body'>

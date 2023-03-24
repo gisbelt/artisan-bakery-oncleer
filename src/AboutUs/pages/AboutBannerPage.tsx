@@ -1,19 +1,17 @@
 import { BannerLogo } from "../../Home/components/BannerLogo"
 import { Line } from "../../ui/components/Line";
-import logo from '/assets/img/logo.png';
-import cake from '/assets/gifs/cake.gif';
-import blob from '/assets/img/blob.svg';
-import blob2 from '/assets/img/blob2.svg';
-import shape09 from '/assets/img/shape-09.svg';
-import people from '/assets/img/people.png';
 import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
-
+import { useScrollTo } from "../../ui/hooks/useScrollTo";
+import logo from '/assets/img/logo.png';
 
 export const AboutBannerPage = () => {
+
+    const { inViewRef } = useScrollTo('/aboutus') 
+
     return (
         <Parallax strength={300} blur={{ min: -10, max: 10 }} bgImage="/assets/img/caja-bocados.jfif" bgImageAlt="about us image" >
-        <section className="about_us">
+        <section className="about_us" ref={ inViewRef }>
             <BannerLogo logo={ logo } />
 
             <div className="about_us_body">
@@ -34,11 +32,12 @@ export const AboutBannerPage = () => {
                             Durante estos años, hemos aplicado nuestra experiencia y conocimiento para crear postres de alta calidad y asequibles. 
                             Cada postre en Oncleer es elaborado con los ingredientes más frescos y de alta calidad, garantizando un sabor único y satisfactorio. 
                         </p>
-                        <Link to="/cakes" className="button">Nuestras creaciones</Link>
+                        <Link to="/cakes/cakes-tab" className="button">Nuestras creaciones</Link>
                     </div>
-                    <div className="about_us_body_right">
-                        <img src={ blob2 } alt="" />
-                    </div>
+
+                    {/* <div className="about_us_body_right">
+                        <img src={ macarons4 } alt="" />
+                    </div> */}
                 </div>
             </div>
         </section>

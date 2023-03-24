@@ -1,10 +1,13 @@
 import { Line } from '../../ui/components/Line'
 import { ContactForm } from '../components/ContactForm'
+import { useScrollTo } from '../../ui/hooks/useScrollTo';
 
 export const ContactPage = () => {
 
+    const { inViewRef } = useScrollTo('/contact')
+
     return (
-        <section className='contact'>
+        <section className='contact' ref={ inViewRef }>
             <div className="contact_body">
                 <div className="contact_body_text">
                     <h2 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="800">
