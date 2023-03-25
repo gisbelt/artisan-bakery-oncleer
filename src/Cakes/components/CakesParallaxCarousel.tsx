@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+import { BannerArrow } from "../../Home/components/BannerArrow";
 
 
 export const CakesParallaxCarousel = () => {
@@ -51,12 +52,15 @@ export const CakesParallaxCarousel = () => {
                     ))
                 }   
             </Swiper>
-
+            
             {isModalOpen && (
                 <ModalImages isModalOpen={isModalOpen} handleClose={handleClose} >
                     <img src={selectedImageUrl} alt="Modal" />
                 </ModalImages>
             )}
+
+            <BannerArrow />
+
         </div>
     )
 }

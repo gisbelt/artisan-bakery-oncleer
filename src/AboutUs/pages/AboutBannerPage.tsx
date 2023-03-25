@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 import { useScrollTo } from "../../ui/hooks/useScrollTo";
 import logo from '/assets/img/logo.png';
+import useParallax from "../../ui/hooks/useParallax";
 
 export const AboutBannerPage = () => {
 
     const { inViewRef } = useScrollTo('/aboutus') 
 
     return (
-        <Parallax strength={300} blur={{ min: -10, max: 10 }} bgImage="/assets/img/caja-bocados.jfif" bgImageAlt="about us image" >
-        <section className="about_us" ref={ inViewRef }>
+        // <Parallax strength={300} blur={{ min: -10, max: 10 }} bgImage="/assets/img/caja-bocados.jfif" bgImageAlt="about us image" >
+        <section className="about_us" ref={ inViewRef }  data-from="100px" data-to="-100px">
             <BannerLogo logo={ logo } />
 
             <div className="about_us_body">
@@ -41,6 +42,6 @@ export const AboutBannerPage = () => {
                 </div>
             </div>
         </section>
-        </Parallax>
+        // </Parallax>
     )
 }

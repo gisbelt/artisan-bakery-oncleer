@@ -35,7 +35,7 @@ export const BannerPage = () => {
                     Escríbenos
                 </button>
 
-                <div className="banner_btn_social" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="800">
+                <div className="banner_btn_social">
                     <a href='' title=''>
                         <i className="bi bi-instagram"></i>
                     </a>

@@ -7,7 +7,7 @@
     color: var(--color9);
     /* color: var(--color1); */
     --opacidad-negro: 0.4;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro)));
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-bocados.jfif");
     /* background-image: url("/assets/img/background_banner.svg"); */
     background-repeat: no-repeat;
     background-position: center;
