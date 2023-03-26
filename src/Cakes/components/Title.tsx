@@ -3,9 +3,10 @@ import { gsap, Power3 } from "gsap";
 
 interface Props {
     lineContent: string;
+    className: string;
 }
 
-export const Title: FunctionComponent<Props> = ({ lineContent }) => {
+export const Title: FunctionComponent<Props> = ({ lineContent, className }) => {
 
     let line1 = useRef<HTMLDivElement | null>(null);
     
@@ -14,7 +15,7 @@ export const Title: FunctionComponent<Props> = ({ lineContent }) => {
           gsap.from([line1.current], 0.8, {
             delay: 0.1,
             ease: "power3.out",
-            y: 64,
+            y: 0,
             stagger: {
               amount: 0.15
             }
@@ -23,7 +24,7 @@ export const Title: FunctionComponent<Props> = ({ lineContent }) => {
     }, [line1]);
 
     return (
-        <h1 ref={line1} className="">
+        <h1 ref={line1} className={ className } data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="400">
             {lineContent}
         </h1>
     )

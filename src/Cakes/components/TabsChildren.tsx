@@ -14,6 +14,7 @@ interface Tabs {
     alt: string;
     title: string;
     description: string;
+    link: string;
 }
 interface Props {
     tabsItems: Tabs[]
@@ -77,7 +78,7 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                                 </div>
                                 <div className="tabs_children_btn">
                                     <hr />
-                                    <button className="button"> Comprar </button>
+                                    <a href={ item.link } className="button" target="_blank"> Comprar </a>
                                 </div>                            
                             </div>
                         </SwiperSlide>

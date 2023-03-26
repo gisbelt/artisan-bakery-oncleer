@@ -228,7 +228,7 @@
     padding: 50px 30px 50px;
 }
 .grid_layout_text .text {
-    line-height: 46px;
+    line-height: 66px;
     letter-spacing: 2px;
     animation: fluido 5s ease-in-out infinite;
     background: linear-gradient(-45deg, #2d2606, #594c0d, #867313, #b3991a);
@@ -236,8 +236,8 @@
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 100%;
-    text-align: center;
+    text-align: start;
+    transform: translate(0px, 0px) !important;
 }
 .gallery {
     --m: 3; /* number of columns */
@@ -610,8 +610,8 @@
         padding: 1.8rem;
     }
     .grid_layout_text .text {
-        font-size: 2rem;
-        line-height: 40px;
+        font-size: 3.8rem;
+        line-height: 60px;
         letter-spacing: 2px;
         font-weight: 900;
     }
@@ -696,8 +696,8 @@
         padding: 1.8rem;
     }
     .grid_layout_text .text {
-        font-size: 1.8rem;
-        line-height: 35px;
+        font-size: 3.8rem;
+        line-height: 55px;
         letter-spacing: 2px;
         font-weight: 900;
     }
@@ -818,8 +818,8 @@
         padding: 1.8rem;
     }
     .grid_layout_text .text {
-        font-size: 1.5rem;
-        line-height: 30px;
+        font-size: 2.5rem;
+        line-height: 40px;
         letter-spacing: 2px;
         font-weight: 900;
     }
