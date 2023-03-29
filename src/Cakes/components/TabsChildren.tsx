@@ -32,7 +32,7 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                 freeMode={true}
                 pagination={{
                     clickable: true,
-                    type: 'fraction'
+                    dynamicBullets: true,
                 }}
                 navigation={true}
                 breakpoints={{
@@ -61,8 +61,8 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                         spaceBetween: 0,
                     }
                 }}
-                modules={[FreeMode,  Pagination, Navigation ]}
-                className="mySwiper"
+                modules={[FreeMode,  Pagination, Navigation]}
+                className="tabs_children_swiper"
             >
                 {
                     tabsItems.map((item, index) => (

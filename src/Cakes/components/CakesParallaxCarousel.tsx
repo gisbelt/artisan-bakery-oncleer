@@ -1,15 +1,14 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, EffectCoverflow, Pagination } from "swiper";
 import { Line } from "../../ui/components/Line";
 import { cakesParallaxImageList } from "../../ui/data/imageList";
 import { useModal } from "../../ui/hooks/useModal";
 import { ModalImages } from "../../ui/components/ModalImages";
+import { BannerArrow } from "../../Home/components/BannerArrow";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, EffectCoverflow, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
-import { BannerArrow } from "../../Home/components/BannerArrow";
-
 
 export const CakesParallaxCarousel = () => {
 
@@ -22,27 +21,45 @@ export const CakesParallaxCarousel = () => {
             </h1>
             <Line />
             <Swiper
-                effect={"cards"}
+                effect={"coverflow"}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 40,
+                    depth: 300,
+                    modifier: 1,
+                    slideShadows: false,
+                }}
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={2}
-                pagination={true}
-                breakpoints={{
-                    "@0.00": {
-                      slidesPerView: 1,
-                    },
-                    "@0.75": {
-                      slidesPerView: 1,
-                    },
-                    "@1.00": {
-                      slidesPerView: 2,
-                    },
-                    "@1.50": {
-                      slidesPerView: 2,
-                    },
+                roundLengths={true}
+                loop={true}
+                slidesPerView={3}
+                pagination={{
+                    clickable: true,
+                    dynamicBullets: true,
                 }}
-                modules={[EffectCards, Pagination]}
-                className="mySwiper"
+                // autoplay={{
+                //     delay: 2200,
+                //     disableOnInteraction: false,
+                // }}
+                breakpoints={
+                    {
+                        "@0.00": {
+                            slidesPerView: 2,
+                        },
+                        "@0.75": {
+                            slidesPerView: 2,
+                        },
+                        "@1.00": {
+                            slidesPerView: 3,
+                        },
+                        "@1.50": {
+                            slidesPerView: 3,
+                        },
+                    }
+                }
+                modules={[EffectCoverflow, EffectCards, Pagination, Autoplay]}
+                className="cakes_parallax_swiper"
             >
                 {
                     cakesParallaxImageList.map((image, index) => (

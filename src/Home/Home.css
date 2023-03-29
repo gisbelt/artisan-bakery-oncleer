@@ -750,6 +750,8 @@
         width: 100%;
         text-align: center;
         color: var(--color1);
+        font-size: 14px;
+        letter-spacing: 2px;
     }
     .banner_box_btn {
         gap: 40px;

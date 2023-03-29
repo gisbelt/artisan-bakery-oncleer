@@ -58,6 +58,7 @@
     background-size: cover;
     width: 100%;
     height: 500px;
+    border-radius: 20px;
 }
 .swiper-slide img {
     display: flex;
@@ -137,6 +138,9 @@
 .tabs_content_body .swiper-button-prev::after, 
 .tabs_content_body .swiper-button-next::after {
     color: var(--color5);
+}
+.tabs_content_body .swiper-pagination {
+    bottom: -8px;
 }
 .tabs_children {
     display: flex;
@@ -303,9 +307,14 @@
         padding: 0;
     }
     .cakes_parallax_body {
-        height: 500px;
-        gap: 35px;
+        /* height: 500px; */
+        gap: 30px;
     }
+    /* coverflow  */
+    .cakes_parallax_body .swiper {
+        overflow: unset;
+    }
+    /* coverflow  */
     .cakes_parallax_body .swiper .swiper-slide  {
         height: 300px;
     }
