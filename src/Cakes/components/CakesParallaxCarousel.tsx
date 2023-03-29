@@ -38,10 +38,10 @@ export const CakesParallaxCarousel = () => {
                     clickable: true,
                     dynamicBullets: true,
                 }}
-                // autoplay={{
-                //     delay: 2200,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 2200,
+                    disableOnInteraction: false,
+                }}
                 breakpoints={
                     {
                         "@0.00": {
