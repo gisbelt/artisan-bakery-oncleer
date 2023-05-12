@@ -17,6 +17,8 @@
   --color10: #fcf9e9;
   --black: #393939;
   --white: #fff;
+  --blue: #035E7B;
+  --pink: #E37E7D;
   /* nav  */
   --nav-width: 48px;
   /* Typography */
@@ -299,7 +301,7 @@ hr{
 
 .pl__ring--c {
   animation-name: ringC;
-  stroke: #035E7B;
+  stroke: #035E7B; 
 }
 
 .pl__ring--d {

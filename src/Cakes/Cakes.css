@@ -242,7 +242,7 @@
     letter-spacing: 2px;
     color: var(--color1);
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3   ;
     -webkit-box-orient: vertical;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
@@ -252,6 +252,10 @@
 .tabs_children_text a {
     display: block;
     margin-top: 10px;
+    color: var(--color4);
+}
+.tabs_children_text a:hover {
+    text-decoration: underline;
 }
 .tabs_children_btn{
     display: flex;

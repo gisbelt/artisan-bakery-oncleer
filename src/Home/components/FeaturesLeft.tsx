@@ -94,13 +94,11 @@ export const FeaturesLeft = () => {
                         <hr />          
                     </div>
                     <div className="features_testimonials">
-                        <div className='features_tools'>
-                            <div className="features_image">
-                                <img src={item.img} alt="" />
-                            </div>
-                            <div className="features_author">
-                                <p>{item.name}</p>
-                            </div>
+                        <div className="features_image">
+                            <img src={item.img} alt="" />
+                        </div>
+                        <div className="features_author">
+                            <p>{item.name}</p>
                         </div>
                         <div className="features_review">
                             <div>
