@@ -2,8 +2,6 @@
 
 ![Oncleer](https://gisbeltorres.tech/assets/gifs/oncleer.gif)
 
-### Installation
-
 ### Structures
 
 ```text
@@ -48,4 +46,4 @@ yarn && yarn dev
 This runs the `dev` script specified in our `package.json`, and will spawn off a server which reloads the page as we save our files.
 Typically the server runs at `http://127.0.0.1:5173/`, but should be automatically opened for you.
 
-```
+
