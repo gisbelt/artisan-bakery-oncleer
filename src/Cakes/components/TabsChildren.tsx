@@ -1,12 +1,13 @@
 import { FC } from "react";
+import { useModal } from "../../ui/hooks/useModal";
+import { ModalImages } from "../../ui/components/ModalImages";
+import { ModalText } from "../../ui/components/ModalText";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useModal } from "../../ui/hooks/useModal";
-import { ModalImages } from "../../ui/components/ModalImages";
 
 interface Tabs {
     id: string;
@@ -22,7 +23,7 @@ interface Props {
 
 export const TabsChildren: FC<Props> = ({ tabsItems }) => {
 
-    const { isModalOpen, selectedImageUrl, handleOpen, handleClose } = useModal()
+    const { isModalOpen, isModalOpenText, selectedImageUrl, selectedText, handleOpen, handleClose, handleOpenModal, handleCloseText } = useModal()
 
     return (
         <>
@@ -65,26 +66,41 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                 className="tabs_children_swiper"
             >
                 {
-                    tabsItems.map((item, index) => (
-                        <SwiperSlide key={ item.id } virtualIndex={ index }>
-                            <div className="tabs_children" data-aos="flip-left" data-aos-easing="ease-in-out" data-aos-delay="400">
-                                <div className="tabs_children_img">
-                                    <div className="overlay"><i className="bi bi-eye overlay-i" onClick={() => handleOpen(item.img)} ></i></div>
-                                    <img src={ item.img } alt={ item.alt } />
+                    tabsItems.map((item, index) => {
+                        return (
+                            <SwiperSlide key={ item.id } virtualIndex={ index } >
+                                <div className="tabs_children" data-aos="flip-left" data-aos-easing="ease-in-out" data-aos-delay="400">
+                                    <div className="tabs_children_img">
+                                        <div className="overlay"><i className="bi bi-eye overlay-i" onClick={() => handleOpen(item.img)} ></i></div>
+                                        <img src={ item.img } alt={ item.alt } />
+                                    </div>
+                                    <div className="tabs_children_text">
+                                        <h3>{ item.title }</h3>
+                                        <p>
+                                            { item.description }
+                                        </p> 
+                                        <a onClick={ () => handleOpenModal(item.title, item.description) } >Ver más</a>
+                                    </div>
+                                    <div className="tabs_children_btn">
+                                        <hr />
+                                        <a href={ item.link } className="button" target="_blank"> Comprar </a>
+                                    </div>                            
                                 </div>
-                                <div className="tabs_children_text">
-                                    <h3>{ item.title }</h3>
-                                    <p>{ item.description } </p>
-                                </div>
-                                <div className="tabs_children_btn">
-                                    <hr />
-                                    <a href={ item.link } className="button" target="_blank"> Comprar </a>
-                                </div>                            
-                            </div>
-                        </SwiperSlide>
-                    ))
+                            </SwiperSlide>
+                        )
+                    })
                 }            
             </Swiper>
+
+            {/* error aqui: abre imagen */}
+            {isModalOpenText && (
+                <ModalText 
+                    isModalOpen={isModalOpenText} 
+                    handleClose={handleCloseText} 
+                    title={selectedText.title}
+                    description={selectedText.description}                
+                />
+            )}
 
             {isModalOpen && (
                 <ModalImages isModalOpen={isModalOpen} handleClose={handleClose} >

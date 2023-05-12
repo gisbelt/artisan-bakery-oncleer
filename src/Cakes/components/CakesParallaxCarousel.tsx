@@ -17,7 +17,7 @@ export const CakesParallaxCarousel = () => {
     return (
         <div className="cakes_parallax_body">
             <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
-                Nuestros Postres
+                Cheesecakes <span>|</span> Tortas <span>|</span> Postres
             </h1>
             <Line />
             <Swiper

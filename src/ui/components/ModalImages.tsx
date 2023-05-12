@@ -1,7 +1,7 @@
 import { Modal } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
 import Box from "@mui/material/Box";
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
 
 interface Props {
     children: React.ReactNode;

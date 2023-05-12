@@ -34,12 +34,15 @@
 }
 .cakes_parallax_body h1 {
     font-size: 3.5rem;
-    animation: fluido 5s ease-in-out infinite;
+    animation: fluido 2s ease-in-out infinite;
     background: linear-gradient(-45deg, #2d2606, #594c0d, #867313, #b3991a);
     background-size: 300%;
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.cakes_parallax_body h1 span{
+    font-weight: 400;
 }
 .swiper {
     width: 100%;
@@ -238,14 +241,23 @@
     width: 100%;
     letter-spacing: 2px;
     color: var(--color1);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 
     text-align: center;
+}
+.tabs_children_text a {
+    display: block;
+    margin-top: 10px;
 }
 .tabs_children_btn{
     display: flex;
     flex-direction: column;
     gap: 18px;
-    padding: 18px;
+    padding: 0 18px 18px 18px;
 
     align-items: center;
 }

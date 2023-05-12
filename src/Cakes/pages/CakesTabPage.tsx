@@ -23,7 +23,7 @@ export const CakesTabPage = () => {
                 <div className="cakes_tabs_options">
                     <Tabs id='tab1'>
                         <TabsContent width="1300px">
-                            <TabsChildren tabsItems={ bocados }/>
+                            <TabsChildren tabsItems={ bocados } />
                         </TabsContent>
                     </Tabs>
                     <Tabs id='tab2'>
