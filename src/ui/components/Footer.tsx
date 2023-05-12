@@ -26,7 +26,7 @@ export const Footer = () => {
                     <div className="copyright_area_text">
                         <p>
                             Oncleer © 2023 Copyright | 
-                            Made with 
+                            Have a good day 
                             <i className="bi bi-heart-fill"></i>  
                             by Gisbel Torres
                         </p>
