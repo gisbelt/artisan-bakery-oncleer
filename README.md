@@ -14,10 +14,28 @@ app/
 ├─ node_modules/
 ├─ src/
 │  └─ aboutUs
+│   └─ components
+│   └─ data
+│   └─ pages
+│   └─ About.css
 │  └─ Cakes
+│   └─ components
+│   └─ data
+│   └─ pages
+│   └─ Cakes.css
 │  └─ Home
+│   └─ components
+│   └─ hooks
+│   └─ pages
+│   └─ Home.css
 │  └─ router
+│   └─ AppRouter.tsx
 │  └─ ui
+│   └─ components
+│   └─ data
+│   └─ hooks
+│   └─ Navbar.css
+│   └─ ScrollTop.css
 │  └─ App.tsx
 │  └─ index.css
 │  └─ main.tsx
