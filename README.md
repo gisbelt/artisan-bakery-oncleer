@@ -1,6 +1,6 @@
 # Oncleer - Artisan Bakery
 
-![Oncleer](https://gisbeltorres.tech/assets/gifs/oncleer.gif)
+![Oncleer](public/assets/img/oncleer.jpg)
 
 ### Structures
 
