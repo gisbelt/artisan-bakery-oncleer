@@ -64,4 +64,10 @@ yarn && yarn dev
 This runs the `dev` script specified in our `package.json`, and will spawn off a server which reloads the page as we save our files.
 Typically the server runs at `http://127.0.0.1:5173/`, but should be automatically opened for you.
 
+### Contributing
+- Fork the repository
+- Make your changes in a separate branch
+- Open a pull request
 
+### Ending Note
+- Consider giving the repo a ⭐ if you liked the project!
