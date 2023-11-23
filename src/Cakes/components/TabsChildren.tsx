@@ -3,11 +3,12 @@ import { useModal } from "../../ui/hooks/useModal";
 import { ModalImages } from "../../ui/components/ModalImages";
 import { ModalText } from "../../ui/components/ModalText";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Pagination } from "swiper";
+import { FreeMode, Navigation, Pagination, Grid } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import 'swiper/css/grid';
 
 interface Tabs {
     id: string;
@@ -28,8 +29,12 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
     return (
         <>
             <Swiper
+                grid={{
+                    rows: 2,
+                    fill: "row"
+                }}
                 slidesPerView={3}
-                spaceBetween={0}
+                spaceBetween={30}
                 freeMode={true}
                 pagination={{
                     clickable: true,
@@ -43,26 +48,26 @@ export const TabsChildren: FC<Props> = ({ tabsItems }) => {
                     },
                     "@0.75": {
                     slidesPerView: 2,
-                    spaceBetween: 0,
+                    spaceBetween: 30,
                     },
                     "@1.00": {
                     slidesPerView: 2,
-                    spaceBetween: 0,
+                    spaceBetween: 30,
                     },
                     "@1.50": {
                     slidesPerView: 3,
-                    spaceBetween: 0,
+                    spaceBetween: 30,
                     },
                     1054 : {
                         slidesPerView: 3,
-                        spaceBetween: 0,
+                        spaceBetween: 30,
                     },
                     1258: {
                         slidesPerView: 3,
-                        spaceBetween: 0,
+                        spaceBetween: 30,
                     }
                 }}
-                modules={[FreeMode,  Pagination, Navigation]}
+                modules={[Grid,  Pagination, Navigation, FreeMode]}
                 className="tabs_children_swiper"
             >
                 {

@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from 'react';
 import { useScrollTo } from "../../ui/hooks/useScrollTo"
 import { Tabs } from "../components/Tabs"
 import { TabsButtons } from "../components/TabsButtons"
@@ -6,13 +7,32 @@ import { TabsContent } from "../components/TabsContent"
 import { bocados, macarons, panesJamon, panetones, tortas, variedades } from "../data/tabsChildrenList"
 
 export const CakesTabPage = () => {
-
     const { inViewRef } = useScrollTo('/cakes/cakes-tab')
+    const [isSticky, setSticky] = useState( false )
+    const ref = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (ref.current) {
+                const threshold = 50; // Set the threshold here (e.g. 50 pixels).
+                const isTop = window.scrollY < ref.current.offsetTop - threshold;
+                setSticky(isTop);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); 
+
+    const getStickyClass = () => {
+        return !isSticky ? 'sticky_tabs_buttons' : '';
+    };
 
     return (
         <>
             <section className="cakes_tabs" ref={ inViewRef }>
-                <div className="cakes_tabs_buttons">
+                <div ref={ ref } className={`cakes_tabs_buttons ${ getStickyClass() }`}>
                     <TabsButtons id='tab1' title="Bocados" />
                     <TabsButtons id='tab2' title="Tortas" />
                     <TabsButtons id='tab3' title="Paneton" />

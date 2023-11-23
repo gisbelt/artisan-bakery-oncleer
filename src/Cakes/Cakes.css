@@ -80,12 +80,26 @@
     display: flex;
     flex-direction: column;
     --opacidad-negro: 0.5;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-macarons.jfif");
+    /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("/assets/img/caja-macarons.jfif"); */
+    background-image: url("/assets/img/background_banner.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    padding: 1.8rem 0;
+    padding: 1.8rem 0 80px;
+}
+.sticky_tabs_buttons {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 16px;
+    background: rgba(249,242,210,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(249,242,210,0.35);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .cakes_tabs_buttons {
     display: flex;
@@ -94,6 +108,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 16px;
+    border: 1px solid transparent;
+    -webkit-transition: 0s ease-in;
+    -moz-transition: 0s ease-in;
+    transition: 0s ease-in;
 }
 .cakes_tabs_buttons button {
     font-size: 14px;
@@ -106,7 +125,10 @@
     color: var(--color1);
     box-shadow: 4px 5px 17px -4px var(--color1);
 }
-
+.cakes_tabs_options {
+    margin-top: 25px;
+    position: relative;
+}
 .tabs_content {
     place-content: center flex-start;
     margin: 0 auto;
